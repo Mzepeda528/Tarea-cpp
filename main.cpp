@@ -1,36 +1,22 @@
-#include "cliente.cpp"
 #include <iostream>
 using namespace std;
-main(){
-   string nit,nombre,apellidos,direccion;
-   int telefono;
-   cout<<"Ingrese Nit:";
-   cin>>nit;
-   cout<<"Ingrese Nombres:";
-   cin>>nombres;
+main()  {
+    // i++ , i+=1 i=i+1
 
-   cout<<"Ingrese apellidos: ";
-   cin>>apellidos;
-   cout<<"Ingrese Direccion: ";
-   cin>>direccion;
-   cout<<"Ingrese telefono:";
-   cin>>telefono;
 
-     //instancia de un objeto
-     /*Cliente obj = Cliente(nombres,apellidos,direccion,telefono,nit);
+  for (int i=0;i<10;i++){
+        if(i==5){
+            cout<<"if"<<endl;
+        continue;
+        }
 
-     obj.mostrar();
+   cout<<i<<endl;
 
-     cout<<"Ingrese Nit:";
-   cin>>nit;
-   obj.stNit(nit);
-   obj.mostrar();*/
-   Cliente obj= Cliente();
-   obj.setNit(nit);
-   obj.setNombres(nombres);
-   obj.setApelidos(apellidos);
-   obj.setDireccion(direccion);
-   obj.setTelefono(telefono);
-   obj.mostrar();
+
+
+  }
+    cout<<"fuera del for"<<endl;
+
+    system("pause");
 
 }
